@@ -1,0 +1,71 @@
+{% extends 'sidemenu.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- SYNOPSIS OF ASKMYRTLE -->
+<section class="p-5 first h-auto">
+
+    <div class="row vert_span hort_span flex-sm-column flex-md-row py-5">
+
+        
+        
+
+        <div class="col-sm-12 col-md-4 h-auto d-flex flex-column justify-content-evenly align-items-center p-3 outline1">
+
+            <h1 class="fs-1 fst-italic text-white">Contributions on the Development of AskMyrtle</h1>
+            <h3 class="fs-3 fst-italic text-whitcol-sm-12 col-md-6 text-white-50">Internship Page</h3>
+
+        </div>
+
+        <div class="col-sm-12 col-md-8 rh-80 py-3 outline2">
+            <p class="fs-1 text-center w-100 text-white">Synopsis</p>
+            <p class="fs-3 w-100 px-sm-1 py-3 px-md-5 text-white-50 text-center">AskMyrtle is a chatbot created for the use of business owners in the Grand Strand area.
+                This chatbot provides the user with information filtered specifically for statistics and facilities in the Grand 
+                Strand area. From initial beta testing, the UI that was present in the program didn't provide the user with many
+                unique features. Therefore, Daniel Alimiron and I were tasked to develop a new UI that would be give AskMyrtle its 
+                own flare and a unique product. 
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<!-- FINAL PRODUCT FOR THE INTERNSHIP SENIOR MASTERY COMPONENTS -->
+
+<section class="p-5 h-auto">
+
+    <!-- VIDEO OF THE FINAL PRODUCT IN CASE IT ISN'T DEPLOYED -->
+    <div class="container rh-60 outline2">
+
+    </div>
+
+    <!-- CARDS TO THE GOOGLE DOCS -->
+    <div class="row flex-sm-column justify-content-evenly flex-md-row rh-30 outline3 p-4 gap-3">
+
+        
+
+        <div class="p-0 h-100 proposal intern-card col-sm-12 col-md-5 rounded rounded-3 outline1 position-relative bg-1-50 border border-2 border-white border-opacity-50">
+            <a href="https://docs.google.com/document/d/1ydYBi-LvmdV_hd-m3JcTLV_uCALMkV5XbSDhP4guz8o/edit?usp=sharing"
+            class="h-100 w-100 nav-link center py-3 position-relative overflow-hidden" target="_blank">
+                <div class="link-title m-0">Proposal</div>
+                <img class="w-25 img-fluid"  src="{% static 'img/internship/docs.png' %}" alt="docs">
+            </a>
+
+        </div>
+
+        <div class="h-100 research intern-card col-sm-12 col-md-5 rounded rounded-3 outline1 position-relative bg-1-50 border border-2 border-white border-opacity-50">
+            <a href="https://docs.google.com/document/d/1VD20YYqia2vuSLUZbaTH1QHzN9Qg0di5qA1NbvAMD7M/edit?usp=sharing"
+            class="h-100 w-100 nav-link center py-3" target="_blank">
+                <div class="link-title m-0">Research Paper</div>
+                <img class="w-25 img-fluid"  src="{% static 'img/internship/docs.png' %}" alt="docs">
+            </a>
+
+        </div>
+           
+    </div>
+
+</section>
+
+{% endblock %}

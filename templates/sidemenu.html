@@ -1,0 +1,197 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sidemenu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/gallary.css' %}">
+    <link rel="stylesheet" href="{% static 'css/carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dropdown.css' %}">
+    <link rel="stylesheet" href="{% static 'css/internship.css' %}">
+    <link rel="stylesheet" href="{% static 'css/refpopups.css' %}">
+</head>
+<body class="bg-1">
+
+    <!-- SIDEMENU WILL BE PRESENT IN ALL OF THE WEB PAGES -->
+   <div id="cover" class="cover"></div> 
+   
+   <div id="popup" class="text-white overflow-hidden rounded-5 position-absolute bg-1-75 border border-2 bd-3 border-opacity-75">
+
+    <div class="position-relative h-100 w-100">
+        <div id="Caudill" class="h-75 center">
+
+            <div class="h-75 w-100 row p-3">
+
+                <!-- IMAGE FRAME -->
+                <div class="h-100 col-3">
+
+                </div>
+
+                <!-- NAME -->
+                <div class="h-100 col-9 center text-center border-start border-white border-opacity-50 border-1">
+                    <h1 class="display-2">Elisha Caudill</h1>
+                </div>
+            </div>
+
+            <!-- TEXT FROM THE REFERENCE -->
+            <div class="h-25 w-100 fs-5 border-top border-bottom border-1 border-white border-opacity-50 py-1 px-2">
+                This is right here as well
+            </div>
+        </div>
+
+        <div id="Name2" class="outline2 h-75">
+            <div class="h-75 w-100 row p-3">
+
+                <!-- IMAGE FRAME -->
+                <div class="h-100 col-3">
+
+                </div>
+
+                <!-- NAME -->
+                <div class="h-100 col-9 center text-center border-start border-white border-opacity-50 border-1">
+                    <h1 class="display-2">Belinda</h1>
+                </div>
+            </div>
+
+            <!-- TEXT FROM THE REFERENCE -->
+            <div class="h-25 w-100 fs-5 border-top border-bottom border-1 border-white border-opacity-50 py-1 px-2">
+                This is right here as well
+            </div>
+        </div>
+
+        <div id="Name3" class="outline3 h-75">
+            <div class="h-75 w-100 row p-3">
+
+                <!-- IMAGE FRAME -->
+                <div class="h-100 col-4 center">
+                    <img class="img-fluid h-100" src="{% static 'img\refs\NikkiKintzpfp.jpg' %}" alt="Nikki Kintz">
+                </div>
+
+                <!-- NAME -->
+                <div class="h-100 col-8 center text-center border-start border-white border-opacity-50 border-1">
+                    <h1 class="display-2">Nikki Kintz</h1>
+                </div>
+            </div>
+
+            <!-- TEXT FROM THE REFERENCE -->
+            <div class="h-25 w-100 fs-5 border-top border-bottom border-1 border-white border-opacity-50 py-1 px-2 fs-4 gap-3">
+                <p>Relation: Internship Mentor</p>
+                <p>Email: hello@freestylehorizons.com</p>
+            </div>
+        </div>
+
+        <div id="Resume" class="h-100 w-100 overflow-y-scroll">
+            
+            <img src="/static/img/resume.png" alt="Resume" class="img-fluid">
+        </div>
+     
+
+        <button id="popupBtn" class="btn h-25 w-100 z-2 bg-1-75"><span class="display-5">Close</span></button>
+    </div>
+    </div>
+
+    
+
+    <nav id="sidemenu" class="bg-1">
+
+        <div id="sidemenuArrows" class="gap-5 flex-column center justify-content-evenly">
+            <div class="h-auto w-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M383-480 200-664l56-56 240 240-240 240-56-56 183-184Zm264 0L464-664l56-56 240 240-240 240-56-56 183-184Z"/></svg>
+            </div>
+            <div class="h-auto w-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M383-480 200-664l56-56 240 240-240 240-56-56 183-184Zm264 0L464-664l56-56 240 240-240 240-56-56 183-184Z"/></svg>
+            </div>
+            <div class="h-auto w-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M383-480 200-664l56-56 240 240-240 240-56-56 183-184Zm264 0L464-664l56-56 240 240-240 240-56-56 183-184Z"/></svg>
+            </div>
+            
+        </div>
+
+        
+        <div class="sm-content position-relative">
+    
+
+            <h1 class="hidden menu-sec title h-25 w-100 fs-sm py-5 px-4 text-white" >Senior Mastery<span class="d-block fs-5 my-5">Brandon Bernal-Andrade</span></h1>
+
+            
+
+            <div class="h-75 w-100 fc-2 fs-5">
+                <ul class="list-unstyled h-100 w-100 d-flex flex-column justify-content-evenly align-items-center">
+                    <li class="fs-3 link w-75 p-2 center"><a class="w-100 d-flex justify-content-between align-items-center nav-link " href="{% url 'home' %}"><span class=" hidden align-self-start page_link px-2">Home</span><img src="{% static 'img/icons/home.svg' %}"></a></li>
+                    <li class="fs-3 link w-75 p-2 center"><a class="w-100 d-flex justify-content-between align-items-center nav-link " href="{% url 'progress' %}"><span class=" hidden page_link px-2">Culmination</span> <img src="{% static 'img/icons/archive.svg' %}"> </a></li>
+                    <li class="fs-3 link w-75 p-2 center"><a class="w-100 d-flex justify-content-between align-items-center nav-link " href="{% url 'creds' %}"><span class=" hidden page_link px-2">Resume</span> <img src="{% static 'img/icons/book-open.svg' %}"> </a></li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+
+    </nav>
+    
+
+    <!-- FILL IN THE BLANK WITH THE CONTENT OF THE PAGE -->
+     <main class="max py-0">
+
+        {% block content %} {% endblock %}
+
+        <footer class="first mt-2 flex-column flex-md-row flex-sm-column rounded-top-3 bg-2-50 d-flex align-items-center justify-content-center h-auto ">
+
+            <!-- THIS IS FOR MY SOCIALS -->
+            <div id="socials" class="col-12 col-xs-12 socials border-white border-opacity-50 col-sm-12 rh-30 col-md-6 text-white py-5 px-2 border-top-0 border-bottom-0 border-start border-end border-2 border-white border-opacity-50">
+                <h1 class="fs-3 h-25 text-center fc-3">Socials</h1>
+
+                <ul class="list-unstyled px-md-5 px-sm-3 h-75 d-flex flex-column align-items-center justify-content-evenly">
+                    <li class="fs-5">
+                        <span class="border-bottom border-1 border-white border-opacity-25">Gmail: <span id="email">bbandrade781@gmail.com</span></span>
+                    </li>
+                    <li class="fs-5">
+                        <a class="nav-link border-bottom border-1 border-white border-opacity-25" target="_blank" href="https://www.instagram.com/brandnewcodes/profilecard/?igsh=MXU4dW9lZndldHpzOA==">
+                            Instagram: <span class="Insta">@Brandnewcodes</span>
+                        </a>
+                        
+                    </li>
+                    <li class="fs-5">
+                        <span class="Resume border-bottom border-1 border-white border-opacity-25">Resume</span>
+                    </li>
+
+                </ul>
+                
+            </div>
+
+            <!-- THIS IS FOR THE REFERENCES -->
+            <div class="h-100 col-12 col-xs-12 col-sm-12 col-md-6 rh-30 text-white py-5 px-2 border-top-0 border-bottom-0 border-start border-end border-2 border-white border-opacity-50">
+                <h1 class="fs-3 h-25 text-center fc-3">References</h1>
+
+                <ul id="refs" class="list-unstyled px-md-5 px-sm-3 h-75 d-flex flex-column align-items-center justify-content-evenly">
+                    <li class="fs-5">
+                        <span class="Caudill border-bottom border-1 border-white border-opacity-25">Elisha Caudill</span>
+                    </li>
+                    <li class="fs-5">
+                        <span class="Name2 border-bottom border-1 border-white border-opacity-25">TBD</span>
+                    </li>
+                    <li class="fs-5">
+                        <span class="Name3 border-bottom border-1 border-white border-opacity-25">Nikki Kintz</span>
+                    </li>
+
+                </ul>
+                
+            </div>
+
+        </footer>
+     </main>
+
+     
+
+    <script src="{% static 'js/sidemenu.js' %}"></script>
+    <script src="{% static 'js/gallary.js' %}"></script>
+    <script src="{% static 'js/carousel.js' %}"></script>
+    <script src="{% static 'js/dropdown.js' %}"></script>
+    <script src="{% static 'js/refpopups.js' %}"></script>
+</body>
+</html>

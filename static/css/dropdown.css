@@ -1,0 +1,147 @@
+
+
+/* :root {
+
+    transition: ease-in-out
+}
+
+.main {
+
+    height: 100svh;
+    width: 100%;
+    background: #CCCCCC;
+}
+
+.outline {
+
+    border: 2px solid red;
+}
+
+.outline2 {
+
+    border: 2px solid blue;
+} */
+
+/* REAL CSS FOR THIS */
+
+.sh-10 {
+
+    height: 10svh;
+}
+
+.w-48 {
+
+    width: 48%;
+}
+
+.circle {
+
+    border-radius: 50%;
+    height: 8svh;
+    width: 8svh;
+}
+
+.content {
+
+    height: 0px;
+    transition: 500ms;
+    opacity: 0;
+}
+
+/* ON CLICK ANIMATION CHANGES */
+
+.menu {
+
+    transition: 1s;
+}
+
+.menu.active {
+
+    flex-grow: 1;
+}
+
+.content.active {
+
+    height: 80%;
+    padding: 0;
+    transition: 250ms;
+    opacity: 1;
+    
+}
+
+.items {
+
+    opacity: 0;
+    transition: 500ms;
+}
+
+.content.active .items {
+
+    animation: fade-in 500ms forwards alternate 400ms;
+    transition: 500ms;
+
+}
+
+.marker {
+
+    transition: 1s;
+}
+
+.marker.active {
+
+    transform: rotate(450deg);    
+}
+
+.marker svg {
+
+    transition: 500ms;
+}
+
+.marker.active svg {
+
+    transform: scale(1.3);
+}
+
+.title {
+
+    transition: 1s;
+}
+
+.title.active {
+
+    transform-origin: right;
+    transform: scale(1.1) translateY(0.25rem);
+    transition: 1s;
+}
+
+
+
+@keyframes fade-in {
+
+    0% {
+
+        opacity: 0;
+        transform: translateY(-10px);
+    }   
+
+
+    100% {
+
+        
+        opacity: 1;
+    }
+}
+
+@keyframes blur {
+
+    0% {
+
+        filter: blur(1rem);
+    }
+    
+    
+    100% {
+
+        filter: blur(0);
+    }
+}

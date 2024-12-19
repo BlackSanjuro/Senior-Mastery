@@ -1,0 +1,67 @@
+/* :root {
+
+    transition: ease-in-out
+}
+
+.main {
+
+    height: 100svh;
+    width: 100%;
+    background: #CCCCCC;
+}
+
+.outline {
+
+    border: 2px solid red;
+}
+
+.outline2 {
+
+    border: 2px solid blue;
+} */
+
+.indicator {
+
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background: #00AD858C;
+    transition: ease-in 0.5s;
+}
+
+.indicator.active {
+
+    background: #00AD85FF;
+    border: 0.1rem solid white;
+    transition-delay: 0.5s;
+    transform-origin: bottom;
+    transform: scale(1.2);
+}
+
+#progress {
+
+    border: 0.5rem solid;
+    transition: ease-in-out 500ms;
+
+}
+
+#img {
+
+    max-height: 50vh;
+}
+
+
+/* @keyframes progress {
+
+    0% {
+
+        transform: scale(1, 1.1);
+        border-color: rgba(0, 77, 67, 0.8);
+    }
+
+    100% {
+
+        transform: scale(0, 1);
+        border-color: rgba(0, 77, 67, 0.2);
+    }
+} */

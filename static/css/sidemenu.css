@@ -1,0 +1,179 @@
+:root {
+
+    transition: ease-in
+}
+
+.cover {
+
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    filter: blur(10px);
+    transition: 750ms ease-in-out;
+}
+
+
+
+.blurred {
+
+    z-index: 2;
+    opacity: 1;
+}
+
+
+
+#sidemenu {
+
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100svh;
+    width: 7vw;
+    min-width: 7vw;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: ease-out 750ms;
+    z-index: 3;
+}
+
+#sidemenu * {
+
+    transition: ease-in 500ms;
+    opacity: 0;
+}
+
+#sidemenuArrows {
+
+    position: absolute;
+    height: 0;
+    width: 7vw;
+    z-index: 5;
+
+    top: calc(50% - 42px);
+    left: 0;
+    opacity: 1 !important;
+    transition: 150ms;
+}
+
+#sidemenuArrows * {
+
+    opacity: 1;
+
+}
+
+#sidemenu:hover * {
+
+    opacity: 1;
+}
+
+#sidemenu:hover {
+
+    border-right: 0.15rem solid white;
+}
+
+#sidemenu:hover #sidemenuArrows {
+
+    opacity: 0 !important;
+}
+
+
+.sm-content {
+
+    height: 100%;
+    width: 100%;
+
+    transition: 1s;
+    overflow: hidden;
+}
+
+@media (maxwidth: 800px ) {
+    
+    
+    #sidemenu * {
+
+        opacity: 0;
+        transition: opacity ease-in 250ms;
+    }
+
+    #sidemenu:hover * {
+
+        opacity: 1;
+    }
+
+    
+}
+
+.title {
+
+    transition: 1s;
+    position: relative;
+    animation: slide-in 500ms ease-in;
+}
+
+.page_link {
+
+    transition: 500ms;
+    width: auto;
+}
+
+.link {
+
+    transition: 500ms;
+    border-radius: 1rem;
+    transition-delay: 0s;
+
+}
+
+.link:hover {
+
+    color: white;
+    text-decoration: underline;
+    background: var(--third);
+}
+
+
+
+
+.hidden {
+
+    opacity: 0;
+
+}
+
+.hide_text {
+
+    display: none;
+}
+
+/* ADDITIONS FOR CODE TO BE BETTER */
+.Caudill, .Name2, .Name3, .Resume, .Insta, #email:hover {
+
+    transition: 200ms ease-in;
+    cursor: pointer;
+}
+.Caudill:hover, .Name2:hover, .Name3:hover, .Resume:hover, .Insta:hover, #email:hover {
+
+    color: var(--third);
+    transform: scale(1.05);
+}
+
+
+
+
+@keyframes slide-in {
+
+    from {
+
+      left: -20%;  
+    }
+
+    to {
+
+        left: 0;
+    }
+}

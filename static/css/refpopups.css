@@ -1,0 +1,70 @@
+#popup {
+
+    top: 10%;
+    left: 15%;
+
+    height: 80%;
+    width: 70%;
+
+    z-index: -1;
+    opacity: 0;
+}
+
+
+#popup.active {
+
+    z-index: 30;
+    opacity: 1;
+    transition: 500ms ease-in;
+}
+
+#Caudill, #Name2, #Name3, #Resume {
+
+    opacity: 1;
+    display: none;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#Resume {
+
+    padding: 0;
+    background-color: white;
+    padding-bottom: 12.5%;
+}
+
+#popup div.active {
+
+    opacity: 1 !important;
+    display: block !important;
+}
+
+#popupBtn {
+
+    color: white;
+    transition: 200ms ease-in;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#popupBtn:hover {
+
+    background-color: var(--third);
+    color: black;
+    scale: 1.1;
+}
+
+#popupBtn span {
+
+    transition: ease-in 300ms;
+    transition: color 0ms;
+}
+
+#popupBtn:hover span {
+
+    font-weight: bold;
+    transform: scale(1.2);
+    transform-origin: bottom;
+}
