@@ -1,6 +1,6 @@
 const popup = document.querySelector('#popup');
 
-const refsnames = ['Caudill', 'Name2', 'Name3', 'Resume'];
+const refsnames = ['Caudill', 'Name2', 'Name3', 'Resume', 'lor'];
 
 const popupBtn = popup.querySelector('#popupBtn')
 

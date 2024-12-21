@@ -178,6 +178,11 @@ footer {
     letter-spacing: 0.2rem;
 }
 
+.no-high {
+
+    user-select: none;
+}
+
 .rh-20 {
 
     min-height: 20vh;
@@ -197,7 +202,7 @@ footer {
 }
 .rh-60 {
 
-    min-height: 60vh;
+    min-height: 60vh !important;
 }
 .rh-70 {
 

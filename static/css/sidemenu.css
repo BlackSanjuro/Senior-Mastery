@@ -151,12 +151,12 @@
 }
 
 /* ADDITIONS FOR CODE TO BE BETTER */
-.Caudill, .Name2, .Name3, .Resume, .Insta, #email:hover {
+.Caudill, .Name2, .Name3, .Resume, .Insta, #email, .lor {
 
     transition: 200ms ease-in;
     cursor: pointer;
 }
-.Caudill:hover, .Name2:hover, .Name3:hover, .Resume:hover, .Insta:hover, #email:hover {
+.Caudill:hover, .Name2:hover, .Name3:hover, .Resume:hover, .Insta:hover, #email:hover, .lor:hover {
 
     color: var(--third);
     transform: scale(1.05);

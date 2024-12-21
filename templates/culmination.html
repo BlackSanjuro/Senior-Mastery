@@ -21,7 +21,7 @@
         </div>
 
         <!-- CAROUSEL -->
-        <div class="col-sm-12 col-md-8 h-auto position-relative py-3 bg-1-75 rounded">
+        <div class="v-stack col-sm-12 col-md-8 h-auto position-relative py-0 bg-1-75 rounded no-high">
 
             <!-- THIS IS POSITIONED ABSOLUTELY FOR THE  -->
             <button id="back" class="btn scrolls left"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00AD85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> </button>
@@ -32,13 +32,13 @@
             <div class="rh-50 p-img w-100 d-flex align-items-center justify-content-center">
 
                 <!-- THE IMAGE FRAME CHANGED -->
-                <img id="image" class="rounded-3" src="{% static 'img/culm/culmination1.png' %}">
+                <img id="image" class="rounded-3 mrh-50" src="{% static 'img/culm/culmination1.png' %}">
 
             </div>
             <div class="rh-20 caption_box h-25 w-100 center">
 
                 <!-- DESCRIPTION/CAPTION -->
-                <p id="caption" class="fc-3 fw-semibold center text-center display-4 h-100">Inputs</p>
+                <p id="caption" class="px-0 fc-3 fw-semibold center text-center display-5 h-100">Inputs</p>
             </div>
         </div>
 
@@ -83,7 +83,7 @@
         
                     <div class="items col-6 outline p-3 h-100">
                         
-                        <img class="h-100 img-fluid rounded-3" src="{% static 'img\projects\wordle.png' %}" alt="Wordle">
+                        <img class="min-h-40 img-fluid rounded-3" src="{% static 'img\projects\wordle.png' %}" alt="Wordle">
 
                     </div>
         
@@ -126,7 +126,7 @@
         
                     <div class="items col-12 outline px-4 py-0 mh-75 d-flex flex-column align-items-center justify-content-evenly">
                         <video class="h-100 w-100 rounded-3 px-3 z-3" controls preload>
-                            <source src="{% static 'img\projects\geoguessing.mp4' %}" type="video/mp4">
+                            <source class="z-3" src="{% static 'img\projects\geoguessing.mp4' %}" type="video/mp4">
                         </video>
 
                     </div>
@@ -178,7 +178,7 @@
         
                     <div class="items col-12 outline px-4 py-0 mh-75 d-flex flex-column align-items-center justify-content-evenly">
                         <video class="h-100 w-100 rounded-3 px-3 z-3" controls preload>
-                            <source src="{% static 'img\projects\geoguessing.mp4' %}" type="video/mp4">
+                            <source src="{% static 'img\projects\servitain.mp4' %}" type="video/mp4">
                         </video>
 
                     </div>
@@ -186,10 +186,10 @@
                     <div class="items col-12 p-3 h-25 w-100">
                         <ul class=" row d-flex align-items-center justify-content-evenly w-100 px-5 list-group-flush h-100 text-white">
         
-                            <li class="text-center fs-6 col-sm-12 col-md-5 py-1 px-md-1 px-sm-0">This was coded during my junior year</li>
-                            <li class="text-center fs-6 col-sm-12 col-md-5 py-1 px-md-1 px-sm-0">First place winner of HCS Passion Project Tech Fair</li>
-                            <li class="text-center fs-6 col-sm-12 col-md-5 py-1 px-md-1 px-sm-0">Python backend with Flask</li>
-                            <li class="text-center fs-6 col-sm-12 col-md-5 px-md-1 py-1 px-sm-0">HTML, Javascript, and Bootstrap CSS for front end</li>
+                            <li class="text-center fs-6 col-sm-12 col-md-5 py-1 px-md-1 px-sm-0">This was coded during my senior year</li>
+                            <li class="text-center fs-6 col-sm-12 col-md-5 py-1 px-md-1 px-sm-0">Current TSA Project for Software Dev.</li>
+                            <li class="text-center fs-6 col-sm-12 col-md-5 py-1 px-md-1 px-sm-0">Python backend with Django Rest Framework</li>
+                            <li class="text-center fs-6 col-sm-12 col-md-5 px-md-1 py-1 px-sm-0">React.js front end with Bootstrap styling</li>
                         </ul>
                     </div>                                                                                                                                vv                                   
                 </div>
@@ -209,7 +209,7 @@
                         </div>
                     </div>
                     <div class="text d-flex align-items-center justify-content-end text col-10 px-3">
-                        <h1 class="text-white title w-100 h-100 d-flex align-items-center justify-content-end fs-1">Raspberry PI</h1>
+                        <h1 class="text-white title w-100 h-100 d-flex align-items-center justify-content-end fs-1">Portfolio</h1>
                     </div>
                 </div>
         
@@ -219,20 +219,19 @@
                 <!-- TOGGLE ACTIVE WITH JS ON CLICK -->
                 <div class="row content h-auto px-4 py-1">
         
-                    <div class="items col-12 outline px-4 py-0 mh-75 d-flex flex-column align-items-center justify-content-evenly">
-                        <video class="h-100 w-100 rounded-3 px-3" controls preload>
-                            <source src="{% static 'img\projects\geoguessing.mp4' %}" type="video/mp4">
-                        </video>
+                    <div class="items col-6 outline p-3 h-100">
+                        
+                        <img class="min-h-40 img-fluid rounded-3" src="{% static 'img\projects\accordians.png' %}" alt="Wordle">
 
                     </div>
         
-                    <div class="items col-12 p-3 h-25 w-100">
-                        <ul class=" row d-flex align-items-center justify-content-evenly w-100 px-5 list-group-flush h-100 text-white">
+                    <div class="items col-6 p-3 h-100">
+                        <ul class="min-h-40 list-group-flush d-flex flex-column justify-content-evenly align-items-start text-white">
         
-                            <li class="text-center fs-6 col-sm-12 col-md-5 py-1 px-md-1 px-sm-0">This was coded during my junior year</li>
-                            <li class="text-center fs-6 col-sm-12 col-md-5 py-1 px-md-1 px-sm-0">First place winner of HCS Passion Project Tech Fair</li>
-                            <li class="text-center fs-6 col-sm-12 col-md-5 py-1 px-md-1 px-sm-0">Python backend with Flask</li>
-                            <li class="text-center fs-6 col-sm-12 col-md-5 px-md-1 py-1 px-sm-0">HTML, Javascript, and Bootstrap CSS for front end</li>
+                            <li class="fs-5">This screenshot is the javasript for these accordians</li>
+                            <li class="fs-5">Portfolio website programmed by hand</li>
+                            <li class="fs-5">HTML, CSS, and Javacript for the visuals</li>
+                            <li class="fs-5">Python Django for creating templates and routing</li>
                         </ul>
                     </div>
                 </div>

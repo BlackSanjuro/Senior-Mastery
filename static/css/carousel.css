@@ -73,6 +73,16 @@
     z-index: -1;
 }
 
+.mrh-50 {
+
+    max-height: 50svh !important;
+}
+
+.mrh-20 {
+
+    max-height: 20svh !important;
+}
+
 
 #image {
 
