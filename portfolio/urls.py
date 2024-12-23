@@ -20,5 +20,3 @@ urlpatterns = [
     path('credentials/', views.creds, name='creds'),
     path('askmyrtle/', views.internship, name='internship')
 ]
-
-urlpatterns += staticfiles_urlpatterns()
