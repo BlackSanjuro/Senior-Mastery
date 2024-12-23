@@ -8,6 +8,7 @@ OTHER IS SELF EXPLANITORY
 
 from django.urls import path
 from . import views
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 # PATH PARAMETERS ARE THE URL PATH THE USER USES
 # SECOND IS THE FUNCTION IN THE VIEWS FILE THAT SHOULD BE USED
@@ -19,3 +20,5 @@ urlpatterns = [
     path('credentials/', views.creds, name='creds'),
     path('askmyrtle/', views.internship, name='internship')
 ]
+
+urlpatterns += staticfiles_urlpatterns()
