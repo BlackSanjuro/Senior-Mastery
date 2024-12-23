@@ -1,0 +1,308 @@
+
+
+/* GENERAL CSS THAT SHOULD APPLY TO ALL OF THE WEBPAGES */
+
+
+:root {
+
+    scrollbar-width: none !important;
+
+    /* MAIN COLORS */
+    --first: #222831;
+    --second: #393E46;
+    --third: #00AD85;
+    --fourth: #EEEEEE;
+
+    /* FONT COLORS */
+    --font-1: #212121;
+    --font-2: #757575;
+    --div: #BDBDBD;
+    --icon: #FFFFFF;
+}
+
+.bg-1 {
+
+    background: var(--first);
+}
+
+.bg-1-50 {
+
+    background: #2228318C;
+}
+
+.bg-1-75 {
+
+    background: #222831BF;
+}
+
+.bg-2 {
+
+    background: var(--second);
+}
+
+.bg-2-50 {
+
+    background: #393E468C;
+}
+
+.bg-3 {
+
+    background: var(--third);
+}
+
+.bg-4 {
+
+    background: var(--fourth);
+}
+
+.fc-1 {
+
+    color: var(--font-1);
+}
+
+.fc-2 {
+
+    color: var(--font-2);
+}
+
+.fc-3 {
+
+    color: #00AD85;
+}
+
+.div-color {
+
+    color: var(--div);
+}
+
+.icon-color {
+
+    color: var(--icon);
+}
+
+.bd-3 {
+
+    border-color: #00AD85 !important;
+}
+.bd-3-50 {
+
+    border: 0.25rem solid #00AD858C;
+}
+
+.fs-sm {
+    
+    font-size: 3.5rem;
+}
+
+.center {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+
+    height: 100svh;
+    width: 93vw;
+    margin-left: 7vw;
+    margin-bottom: 2vh;
+    overflow: scroll;
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding-bottom: 0;
+    padding-right: 0;
+    transition: 1s ease-in-out;
+
+    /* THIS LOOKS FUN FOR LIKE SCROLL BEHAVIORS */
+    /* scrollbar-track-color: blue;
+    scrollbar-color: violet; */
+}
+
+
+main.blurred {
+
+    filter: blur(20px) ;
+    transform: scale(0.95);
+}
+
+section, footer {
+
+    border-radius: 0.2rem 0.2rem 1rem 1rem;
+    scroll-snap-align: start;
+    height: 100svh;
+    width: 93vw;
+    border-top: 0.25rem solid var(--div);
+    background: var(--second);
+    /* overflow-y: auto; */
+}
+
+
+footer {
+
+    scroll-snap-align: end;
+}
+
+.socials {
+
+    border-bottom-width: 0px;
+}
+
+@media (min-width: 576px) {
+    .socials {
+
+        border-bottom-width: 2px !important;
+    }
+}
+.sec-height {
+
+    height: 100svh;
+}
+
+.first {
+
+    border-top: none;
+}
+
+
+.goal {
+
+    min-width: 200px;
+    border: 0.25rem solid var(--third);
+    letter-spacing: 0.1rem;
+}
+
+.goal h2 {
+
+    letter-spacing: 0.2rem;
+}
+
+.no-high {
+
+    user-select: none;
+}
+
+.rh-20 {
+
+    min-height: 20vh;
+}
+
+.rh-30 {
+
+    min-height: 30vh;
+}
+.rh-40 {
+
+    min-height: 40vh;
+}
+.rh-50 {
+
+    min-height: 50vh;
+}
+.rh-60 {
+
+    min-height: 60vh !important;
+}
+.rh-70 {
+
+    min-height: 70vh;
+}
+
+.rh-75 {
+
+    min-height: 75vh;
+}
+
+.rh-80 {
+
+    min-height: 80vh;
+}
+
+.rh-90 {
+
+    min-height: 90vh;
+}
+
+.mw-25 {
+
+    min-width: 25%;
+}
+
+.mw-50 {
+
+    min-width: 50%;
+}
+
+.mw-75 {
+
+    min-width: 75%;
+}
+
+.mw-100 {
+
+    min-width: 100%;
+}
+
+.mh-25 {
+
+    min-height: 25%;
+}
+
+.mh-50 {
+
+    min-height: 50%;
+}
+
+.mh-75 {
+
+    min-height: 75%;
+}
+
+.mh-100 {
+
+    min-height: 100%;
+}
+
+.mxh-100 {
+
+    max-height: 100%;
+}
+
+.vert_span {
+
+    height: 100%;
+}
+
+.hort_span {
+
+    width: 100%;
+}
+
+
+/* .max {
+
+    height: 100svh;
+    width: 100vw;
+} */
+
+.outline1 {
+
+    border: 2px solid red;
+}
+
+.outline2 {
+
+    border: 2px solid blue;
+}
+
+.outline3 {
+
+    border: 2px solid green;
+}
+
+/* SEND SIDEBAR BACK */
+.hide {
+
+    z-index: -2 !important;
+}
