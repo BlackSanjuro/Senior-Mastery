@@ -6,7 +6,7 @@ const forward = document.getElementById('forward');
 
 // CURRENT FIRST PART OF THE STRING PATH
 const culm_max = 10
-const culm_img_path = '/static/img/culm/culmination';
+const culm_img_path = '/static/img/culm/Culmination';
 let culm_current_img = 1;
 
 // TEXT THAT WOULD BE CHANGING
