@@ -7,6 +7,7 @@ const forward = document.getElementById('forward');
 // CURRENT FIRST PART OF THE STRING PATH
 const culm_max = 10
 const culm_img_path = '/static/img/culm/Culmination';
+const culm_root = 'img/culm/Culmination'
 let culm_current_img = 1;
 
 // TEXT THAT WOULD BE CHANGING
@@ -39,7 +40,7 @@ const change_up = async () => {
     forward.disabled = true
     image.classList.toggle('change_fwd');
     let stop = await espera(500);
-    image.setAttribute('src', `${culm_img_path}${culm_current_img}.png`);
+    image.setAttribute('src', `{% static '${culm_root}${culm_current_img}.png' %}`);
     let stop2 = await espera(500);
     image.classList.toggle('change_fwd');
     let stop3 = await espera(100);

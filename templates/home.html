@@ -11,33 +11,52 @@
 
     <div class="row vert_span hort_span flex-md-row flex-sm-column-reverse flex-xs-column-reverse">
         
-        <!-- GALLARY COMPONENT -->
-        <div class="col-sm-12 col-md-8 vert_span rounded bg-1-50 ">
             
-            <div class="vert_span hort_span d-flex align-items-center justify-content-center flex-column py-2">
 
-                <div class=" bg-1-75 rounded-3 h-75 w-100 d-flex align-items-center justify-content-center py-5 sm">
+        <div id="gallary" class="carousel slide col-sm-12 col-md-8 vert_span rounded bg-1-50" data-bs-ride="carousel">
 
-                    <img id="img" src="{% static 'img/gallary/heroimage1.jpg' %}" class="h-100 img-fluid rounded-3 bd-3-50">
-        
-                </div>
-        
-                <div class="h-25 w-100">
-        
-                    <div class="h-25 w-100 py-5 px-3 d-flex align-content-start justify-content-center">
-        
-                        <div id="progress" class="w-100 rounded-5 "></div>
-                    </div>
-        
-                    <div id="ids" class="h-75 d-flex justify-content-evenly align-items-start py-5">
-                    
-                    </div>
-        
-                </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#gallary" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#gallary" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#gallary" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#gallary" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#gallary" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#gallary" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#gallary" data-bs-slide-to="6" aria-label="Slide 7"></button>
             </div>
-            
 
-        </div>
+            <div class="carousel-inner">
+
+              <div class="carousel-item c-item pt-4 active">
+                <img src="{% static 'img/gallary/heroimage1.jpg' %}" class="mx-auto d-block h-100" alt="...">
+              </div>
+
+              <div class="carousel-item c-item pt-4">
+                <img src="{% static 'img/gallary/heroimage2.jpg' %}" class="mx-auto d-block h-100" alt="...">
+              </div>
+
+              <div class="carousel-item c-item pt-4">
+                <img src="{% static 'img/gallary/heroimage3.jpg' %}" class="mx-auto d-block h-100" alt="...">
+              </div>
+
+              <div class="carousel-item c-item pt-4">
+                <img src="{% static 'img/gallary/heroimage4.jpg' %}" class="mx-auto d-block h-100" alt="...">
+              </div>
+
+              <div class="carousel-item c-item pt-4">
+                <img src="{% static 'img/gallary/heroimage5.jpg' %}" class="mx-auto d-block h-100" alt="...">
+              </div>
+
+              <div class="carousel-item c-item pt-4">
+                <img src="{% static 'img/gallary/heroimage6.jpg' %}" class="mx-auto d-block h-100" alt="...">
+              </div>
+
+              <div class="carousel-item c-item pt-4">
+                <img src="{% static 'img/gallary/heroimage7.jpg' %}" class="mx-auto d-block h-100" alt="...">
+              </div>
+
+            </div>
+          </div>
 
         <!-- TITLE AREA FOR ME  -->
         <div class="h-auto col-sm-12 col-md-4 d-flex flex-column justify-content-evenly align-items-center p-5 text-white">
@@ -59,7 +78,7 @@
 <!-- USE FOR LOOP WITH THE DJANGO BACKEND TO SIMPLIFY AND STORE STUFF A FILE FOR EASY MANAGEMENT -->
 <section class="my-0 h-auto container-fluid">
 
-    <h1 class="text-center text-white rh-10 w-100 fs-1 d-flex align-items-center justify-content-center">Future Goals Set</h1>
+    <h1 class="text-center py-3 text-white rh-10 w-100 fs-1 d-flex align-items-center justify-content-center">Future Goals Set</h1>
 
     <div class="row d-flex flex-md-row flex-sm-column align-items-center justify-content-evenly h-auto w-100 py-5 gap-5">
 
@@ -126,5 +145,7 @@
     
 
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 {% endblock %}

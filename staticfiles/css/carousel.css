@@ -16,7 +16,32 @@
     border: 2px solid blue;
 } */
 
+.c-item {
 
+    height: 70svh;
+}
+
+#gallary {
+
+    height: 80svh;
+}
+
+#gallary img {
+
+    border-radius: 1rem;
+}
+
+#carousel .carousel-caption {
+
+    background: #2228318C;
+    width: 100%;
+    left: 0 !important;
+}
+
+
+/* DATED OLD CAROURSEL CODE */
+
+/* 
 .scrolls {
 
     background: radial-gradient(
@@ -70,8 +95,7 @@
     padding: 1svh 16% 0.5svh 16%;
     background: rgb(64, 64, 64, 0.4);
     /* color: azure; */
-    z-index: -1;
-}
+/*
 
 .mrh-50 {
 
@@ -173,4 +197,4 @@
         transform: scale(1) translateX(0);
         opacity: 1;
     }
-}
+} */
